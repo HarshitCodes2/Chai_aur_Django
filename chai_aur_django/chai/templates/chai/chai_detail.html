@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <title>All Chai</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Chai Details Page</h1>
+
+    <div class="m-5">
+    <h3> {{chai.name}}  -- {{chai.prices}}</h3>
+
+    <p> {{chai.description}} </p>
+
+
+    <a href="{% url 'all_chai' %}">
+        <button class="bg-gray-900 text-white p-2">
+            Go Back
+        </button>
+    </a>
+
+    </div>
+
+
+{% endblock %}
